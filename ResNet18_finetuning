@@ -38,7 +38,7 @@ test_dataset = PathMNIST(split='test', transform=transform)
 image, label = train_dataset[0]
 label = torch.tensor(label).long()
 
-batch_size = 32
+batch_size = 64
 
 train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle = True)
 val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle = False)
